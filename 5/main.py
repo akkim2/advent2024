@@ -1,4 +1,4 @@
-rules = {} #In format {page_num:[all_pages_that_come_before_it]}
+rules = {} #In format {page_num:[all_pages_that_come_after_it]}
 with open("rules.txt", "r") as file:
     for line in file:
         rule = line.split("|")
