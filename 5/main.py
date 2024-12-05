@@ -28,7 +28,7 @@ for update in updates:
 print(middle_num_sum)
 
 # Part 2
-def find_repaired_update(bad_update):
+def find_corrected_update(bad_update):
     corrected_update = []
     for update in bad_update:
         idx_to_insert = len(corrected_update)
@@ -42,8 +42,8 @@ def find_repaired_update(bad_update):
 middle_num_sum = 0
 for update in updates:
    if not update_is_valid(update):
-       repaired_update = find_repaired_update(update)
-       middle_num_sum += repaired_update[len(repaired_update)//2]
+       corrected_update = find_corrected_update(update)
+       middle_num_sum += corrected_update[len(corrected_update)//2]
 
 print(middle_num_sum)
 
